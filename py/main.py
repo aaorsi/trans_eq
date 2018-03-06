@@ -1,5 +1,7 @@
 import numpy as np
 import pylab as pl
+import os
+
 
 import read_data as read
 import tools 
@@ -7,7 +9,9 @@ from scipy.optimize import curve_fit
 from miscvars import *
 import matplotlib.gridspec as gridspec
 
-def compute_transform(FilterSetName, use_subsample=None,fitting_function='secondgrade',makeplot=True):
+RootDir = os.getcwd()
+
+def compute_transform(FilterSetName, use_subsample=None,fitting_function='linear',makeplot=True):
 
   Filterstrings = cfhtls_strings if FilterSetName == 'CFHTLS' else sdss_strings
 

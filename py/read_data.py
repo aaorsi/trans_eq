@@ -6,15 +6,16 @@ import glob
 import string
 from astropy.io import fits
 import weighted as wp
+import os
 
-root_datadir = '/home/CEFCA/aaorsi/work/jplus_zp/data/'
+RootDir = string.rsplit(os.getcwd(),'/',1)[0] + '/data/'
 
 def open_ngsl():
 
-  flist = glob.glob(root_datadir + '*fits')
+  flist = glob.glob(RootDir + '*fits')
   nfiles = len(flist)
   
-  print '%ld files in %s' % (nfiles, root_datadir)
+  print '%ld files in %s' % (nfiles, RootDir)
 
   specnamelist = []
   ngsl_data = {}
@@ -32,12 +33,14 @@ def open_ngsl():
 
 
 def open_filters(fdir,usecols=[0,1]):
-  ff = root_datadir + fdir + '/'
+  ff = RootDir + fdir + '/'
   fil_ext = 'fil' if fdir == 'CFHTLS' else 'dat'
   flist = glob.glob(ff+'*.'+fil_ext)
   nfilters = len(flist)
 
   print '%ld filters found for %s' % (nfilters, fdir)
+  if nfilters == 0:
+    raise ValueError('no filters found!')
 
   filters = {}#'flist':flist}
   filters_sorted = {}#'flist':flist}

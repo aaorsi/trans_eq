@@ -19,15 +19,15 @@ def sdss_strings(fname):
 
 def cfhtls_strings(fname):
   if fname == 'uMega':
-    strname = 'u*'
+    strname = r'u_{\rm CFHT}'
   elif fname == 'gMega':
-    strname = r'g\' '
+    strname = r'g_{\rm CFHT}'
   elif fname == 'rMega':
-    strname = r'r\''
+    strname = r'r_{\rm CFHT}'
   elif fname == 'iMega':
-    strname = r'i\''
+    strname = r'i_{\rm CFHT}'
   elif fname == 'zMega':
-    strname = r'z\''
+    strname = r'z_{\rm CFHT}'
   else: 
     print 'filter name '+fname+' not recognised'
     strname = ''
@@ -36,29 +36,29 @@ def cfhtls_strings(fname):
 
 def jplus_strings(fname):
   if fname == 'z_sdss_with_ccd_qe':
-    strname = 'J_z'
+    strname = r'z_{\rm JAVA}'
   elif fname == 'r_sdss_with_ccd_qe':
-    strname = 'J_r'
+    strname = r'r_{\rm JAVA}'
   elif fname == 'i_sdss_with_ccd_qe':
-    strname = 'J_i'
+    strname = r'i_{\rm JAVA}'
   elif fname == 'g_sdss_with_ccd_qe':
-    strname = 'J_g'
+    strname = r'g_{\rm JAVA}'
   elif fname == 'F861_with_ccd_qe':
-    strname = 'J_{861}'
+    strname = 'J0861'
   elif fname == 'F660_with_ccd_qe':
-    strname = 'J_{660}'
+    strname = 'J0660'
   elif fname == 'F515_with_ccd_qe':
-    strname = 'J_{515}'
+    strname = 'J0515'
   elif fname == 'F430_with_ccd_qe':
-    strname = 'J_{430}'
+    strname = 'J0430'
   elif fname == 'F410_with_ccd_qe':
-    strname = 'J_{410}'
+    strname = 'J0410'
   elif fname == 'F395_with_ccd_qe':
-    strname = 'J_{395}'
+    strname = 'J0395'
   elif fname == 'F378_with_ccd_qe':
-    strname = 'J_{378}'
+    strname = 'J0378'
   elif fname == 'F348_with_ccd_qe':
-    strname = 'J_{348}'
+    strname = r'u_{\rm JAVA}'
   else: 
     print 'filter name '+fname+' not recognised'
     strname = ''
