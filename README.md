@@ -4,6 +4,9 @@ Computes transformation equations between filter systems. Currently, it computes
 
 The output is a file containing a LateX table with all coefficients, and a set of plots showing the performance of the equations over the set of templates used.
 
-To run it
+**Example of usage
+```python
+from main import *
+compute_transform('CFHTLS')
 
 
