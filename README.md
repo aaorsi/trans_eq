@@ -12,4 +12,4 @@ compute_transform('CFHTLS')
 ```
 
 **Example of output
-(https://github.com/aaorsi/trans_eq/blob/master/plots/all.F378_with_ccd_qe.png)
+![Example](https://github.com/aaorsi/trans_eq/blob/master/plots/all.F378_with_ccd_qe.png)
