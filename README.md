@@ -2,6 +2,11 @@
 
 Computes transformation equations between filter systems. Currently, it computes transformations between the J-PLUS and either SDSS or CFHTLS filter systems. The code can be easily extended to deal with any filter system. To find the coefficients, the code uses the NGSL catalogue of standard stars. Future updates should allow to use any spectroscopic library of objects.
 
+The method used to construct the transformation equations is described in detail in Section 4 of Aparicio-Villegas et al. (2010) for the ALHAMBRA photometric system:
+
+https://docs.google.com/document/d/1F9lVx2vKyGBdZUbamtYgFSrAV-yfB0qKxTXY0HN2Jfs/edit?usp=sharing
+
+
 The output is a file containing a LateX table with all coefficients, and a set of plots showing the performance of the equations over the set of templates used.
 
 **Example of usage**
