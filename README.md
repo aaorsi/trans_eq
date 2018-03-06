@@ -9,4 +9,7 @@ The output is a file containing a LateX table with all coefficients, and a set o
 from main import *
 compute_transform('CFHTLS')
 
+```
 
+**Example of output
+(https://github.com/aaorsi/trans_eq/blob/master/plots/all.F378_with_ccd_qe.png)
