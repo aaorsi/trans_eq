@@ -4,7 +4,7 @@ Computes transformation equations between filter systems. Currently, it computes
 
 The method used to construct the transformation equations is described in detail in Section 4 of Aparicio-Villegas et al. (2010) for the ALHAMBRA photometric system:
 
-https://docs.google.com/document/d/1F9lVx2vKyGBdZUbamtYgFSrAV-yfB0qKxTXY0HN2Jfs/edit?usp=sharing
+http://adsabs.harvard.edu/abs/2010AJ....139.1242A
 
 
 The output is a file containing a LateX table with all coefficients, and a set of plots showing the performance of the equations over the set of templates used.
