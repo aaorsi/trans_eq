@@ -4,12 +4,14 @@ Computes transformation equations between filter systems. Currently, it computes
 
 The output is a file containing a LateX table with all coefficients, and a set of plots showing the performance of the equations over the set of templates used.
 
-**Example of usage
+**Example of usage**
 ```python
 from main import *
 compute_transform('CFHTLS')
 
 ```
 
-**Example of output
+**Example of output**
+The figure shows the performance of the equations (model - real magnitude) of a J-PLUS narrow filter expressed as a function of CFHT broad band filters.
+
 ![Example](https://github.com/aaorsi/trans_eq/blob/master/plots/all.F378_with_ccd_qe.png)
